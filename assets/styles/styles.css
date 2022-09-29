@@ -30,8 +30,28 @@
 /*-----------------------------Header----------------------------------------*/
 .header {
     background-color: #D6B2E3;
+    color: #554F4F;
     text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
+
+.header__link, .header__link:hover  {
+    color: #554F4F;
+    text-decoration: none;
+
+}
+
+.header__link_pink {
+    display: block;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: #EEC7E8;
+    border-radius: 20px;
+    margin-left: 4rem;
+}
+
 
 /*------------------------------Main-----------------------------------------*/
 
@@ -42,16 +62,26 @@
     align-items: center;
     text-align: center;
     width: 100vw;
-    padding: 5rem 10% 2rem 10%;
+    padding: 10rem 25% 10rem 25%;
 
 }
 
-
-
-.cover__img img {
+.cover__img {
     width: 100%;
     max-width: 100%;
-    object-fit: cover;
+}
+
+.cover__text {
+    line-height: 161.14%;
+    font-weight: 400;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 100%;
+}
+
+.cover__text_with-bg {
+    background-image: url("../../assets/images/decoration/cover-decoration.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /*------------------------------disclaimer------------------------------------*/
 
