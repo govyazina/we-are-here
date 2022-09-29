@@ -57,6 +57,13 @@
     align-items: center;
 }
 
+.title_decor {
+    background-image: url(/assets/images/decoration/useful-decoration.svg);
+    background-repeat: no-repeat;
+    background-position:left;
+    height: 10rem;
+}
+
 .useful__items {
     display: flex;
     justify-content: space-around;
