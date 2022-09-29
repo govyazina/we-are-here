@@ -35,7 +35,25 @@
 /*------------------------------cover-----------------------------------------*/
 
 /*------------------------------disclaimer------------------------------------*/
+.article {
+display: flex;
+text-align: center;
+margin: auto;
+background: rgba(207, 178, 255, 0.2);
+border-radius: 4.75rem;
+width: 56.375rem;
+}
 
+.text {
+padding: 2rem;
+font-size:1.25rem;
+}
+
+.disclaimer__image {
+display:flex;
+
+width:21.5rem;
+}
 /*------------------------------anxiety-about---------------------------------*/
 
 /*------------------------------anxiety-recognision---------------------------*/
