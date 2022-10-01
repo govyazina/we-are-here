@@ -239,11 +239,153 @@ flex-direction: column;
 /*------------------------------self-help-------------------------------------*/
 
 /*------------------------------prof-help-------------------------------------*/
+.prof-help {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: fit-content;
+    justify-items: center;
+    row-gap: 5rem;
+    margin-bottom: 10rem;
+}
+
+.prof-help__title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 1rem;
+    margin: 2rem;
+    height: 20vh;
+    width: 40vw;
+    background: url(/Support/assets/images/decoration/prof-help-decoration.svg) no-repeat;
+    background-position: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+
+ .prof-help__info a {
+    align-self: start;
+    color: #575753;
+} 
+
+.prof-help__info a:hover {
+    text-decoration: none;
+    color: #8D8D85;
+} 
+
+.prof-help__info-text  {
+    display: grid;
+    grid-template-rows: 2fr repeat(5, 1fr);
+    align-items: start;
+    box-sizing: border-box;
+    width: 29vw;
+    height: 50vh;
+    padding: 10%;
+    border-radius: 10%;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    font-size: 1rem;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    line-height: 32px;
+    text-align: left;
+    background-color: #F6D8FF;
+}
+
+.prof-help__info-text h2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.prof-help__info-text_bold {
+    font-weight: bold;
+}
+
+.prof-help__info-pills,
+.prof-help__info-resurces,
+.prof-help__info-psychotherapy,
+.prof-help__info-phone {
+    display: grid;
+    gap: 2rem;
+    align-self: center;
+}
+
+.prof-help__info-resurces img,
+.prof-help__info-phone img,
+.prof-help__info-pills img,
+.prof-help__info-psychotherapy img {
+    height: 45vh;
+    box-sizing: border-box;
+}
+
+.prof-help__info-pills img {
+    height: 45vh;
+}
+
+.prof-help__info-resurces img,
+.prof-help__info-pills img {
+    padding: 5%;
+}
 
 /*------------------------------relief---------------------------------*/
+.relief {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
 
+.relief img {
+    width: 30vh;
+}
 /*------------------------------team------------------------------------------*/
+.team {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 15rem;
+    
+}
 
+ .team__title {
+    align-self: end;
+    padding: 8rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    background: url(/Support/assets/images/decoration/team-decoration.svg) no-repeat;
+    background-position: 12% 25%;
+    background-size: 25vh;
+    letter-spacing: 0.08em;
+ }
+
+ .team__images-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10rem;
+    letter-spacing: 0.08em;
+ }
+
+.team__images img {
+    width: 35vh;
+}
+
+.team__description {
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+   margin-bottom: 5rem;
+   width: 80vw;
+   height: 28vh;
+   font-weight: 400;
+   border-radius: 50px;
+   text-align: center;
+   background-color: #F6D8FFA6;
+}
+
+.team__description p {
+   font-size: 1.2rem;
+   margin: 10%;
+   text-transform: uppercase;
+   letter-spacing: 0.08em;
+}
 /*------------------------------useful----------------------------------------*/
 
 
