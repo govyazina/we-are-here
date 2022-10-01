@@ -50,19 +50,22 @@ border-radius: 4.75rem;
 
 .disclaimer__article {
 background: rgba(207, 178, 255, 0.2);
-width: 45%;
+width: 55%;
 margin-top: 5rem;
+text-transform: uppercase;
 }
 
 .text {
 padding: 2rem;
 font-size:1.25rem;
+letter-spacing: 0.025em;
+font-weight: 400;
 }
 
 .disclaimer__image {
 display:flex;
 margin-top: 5rem;
-width:26.5rem;
+width:36.5rem;
 }
 
 @media screen and (max-width:1023px) {
@@ -81,6 +84,12 @@ display:grid;
 grid-template-columns: 2fr 1fr;
 margin: 5rem 5rem 5rem 5rem;
 row-gap: 4rem;
+}
+
+.text-article {
+letter-spacing: 0.13em;
+font-variant: small-caps;
+line-height: 161.14%;
 }
 
 .anxiety-about__text {
