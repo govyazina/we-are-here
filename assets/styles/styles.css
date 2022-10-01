@@ -28,12 +28,119 @@
 
 
 /*-----------------------------Header----------------------------------------*/
+.header {
+    background-color: #D6B2E3;
+    color: #554F4F;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
 
+.header__logo-img {
+    margin-right: 1rem;
+}
+
+.header__link, .header__link:hover  {
+    color: #554F4F;
+    text-decoration: none;
+}
+
+.header__link_nav {
+    padding: 0 0.5rem 0 0.5rem;
+    margin-right: 1rem;
+    transition: 0.3s ease-out 0.1s;
+}
+
+.header__link_nav:hover {
+    background-color: #B696C194;
+    border-radius: 20px;
+    transition: 0.3s ease-out 0.1s;
+}
+
+.header__link_nav:active {
+    background-color: #EED4F0;
+    border-radius: 20px;
+    transition: 0.3s ease-out 0.1s;
+}
+
+.header__link_pink {
+    display: block;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: #EEC7E8;
+    border-radius: 20px;
+    transition: 0.3s ease-out 0.1s;
+}
+
+.header__link_pink:hover {
+    background-color: #FBE5F7A8;
+    transition: 0.3s ease-out 0.1s;
+}
+
+.header__link_pink:active {
+    background-color: #FFFFFFB8;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 991px) {
+    .collapse {
+        margin-left: calc(60px - 0.5rem);
+    }
+
+    .header__link_pink {
+        margin-left: calc(60px - 2rem + 0.5rem + 1rem);
+    }
+
+    .header__link_nav {
+        padding-left: calc(1rem + 1rem);
+        /*width: 10.5rem;*/
+    }
+
+
+}
 
 /*------------------------------Main-----------------------------------------*/
 
 /*------------------------------cover-----------------------------------------*/
+.cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    padding: 10rem 25% 10rem 25%;
 
+    letter-spacing: 0.1em;
+
+}
+
+.cover__img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.cover__text {
+    line-height: 161.14%;
+    font-weight: 400;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 100%;
+    letter-spacing: 0.025em;
+}
+
+.cover__text_with-bg {
+    background-image: url("../../assets/images/decoration/cover-decoration.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 480px) {
+    .cover {
+        padding: 4rem 5% 4rem 5%;
+    }
+
+}
 /*------------------------------disclaimer------------------------------------*/
 
 /*------------------------------anxiety-about---------------------------------*/
