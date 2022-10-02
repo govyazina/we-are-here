@@ -236,6 +236,84 @@ flex-direction: column;
 }
 /*------------------------------anxiety-recognition---------------------------*/
 
+.anxiety-recognition {
+    margin-bottom: 10rem;
+}
+
+.anxiety-recognition__title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    margin-bottom: 7.75rem;
+    height: 12rem;
+}
+
+.anxiety-recognition__title {
+    align-items: center;
+    background: url(/assets/images/decoration/anxiety-about-decoration.svg) no-repeat;
+    background-position: 70% 30%;
+}
+
+.anxiety-recognition__block {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(196, 166, 232, 0.19);
+    border-radius: 2.5rem;
+    width: 70rem;
+    margin-bottom: 14.6rem;
+}
+
+.anxiety-recognition__block_text {
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 2.9rem 1.6rem;
+    line-height: 2.4rem;
+}
+
+.anxiety-recognition__symptoms {
+    display: grid;
+    grid-gap: 1.4rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5;
+    grid-template-areas:
+        "item1 item2"
+        "item3 item4"
+        "item5 item6"
+        "item7 item8"
+        ".     item9";
+
+}
+
+.item9 {
+    justify-items: center;
+}
+
+.anxiety-recognition__symptoms_item {
+    display: flex;
+    width: 34rem;
+    justify-items: center;
+    align-items: center;
+    font-weight: 400;
+    border-radius: 2.8rem;
+    background-color: rgba(196, 166, 232, 0.19);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 4rem;
+
+}
+
+.anxiety-recognition__symptoms img {
+    max-width: 8rem;
+    max-height: 8rem;
+    margin-right: 1rem;
+}
+
 /*------------------------------self-help-------------------------------------*/
 
 /*------------------------------prof-help-------------------------------------*/
