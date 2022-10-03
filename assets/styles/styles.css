@@ -47,6 +47,7 @@
 
 .header__logo-img {
     margin-right: 1rem;
+    width: 3.75rem;
 }
 
 .header__link,
@@ -145,6 +146,13 @@
 @media screen and (max-width: 480px) {
     .cover {
         padding: 4rem 5% 4rem 5%;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+    .cover {
+        padding: 8rem 10% 8rem 10%;
     }
 
 }
