@@ -1,4 +1,3 @@
-
 /*---общие правила
 1. называем заголовки title, title будет всегда отдельным блоком, не будет элементом, их размер 2,1 rem
 2. отступы в rem*/
@@ -13,10 +12,11 @@
     font-style: normal;
     font-weight: 700;
     font-size: 1.5rem;
-    line-height: 2rem; /*где-то по тексту бывает 2.4rem, надо отслеживать*/
+    line-height: 2rem;
+    /*где-то по тексту бывает 2.4rem, надо отслеживать*/
     color: #575753;
     background: rgba(255, 243, 253, 1);
-    
+
 
 }
 
@@ -43,7 +43,8 @@
     margin-right: 1rem;
 }
 
-.header__link, .header__link:hover  {
+.header__link,
+.header__link:hover {
     color: #554F4F;
     text-decoration: none;
 }
@@ -141,99 +142,101 @@
     }
 
 }
+
 /*------------------------------disclaimer------------------------------------*/
 .disclaimer {
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .article {
-text-align: center;
-margin: auto;
-border-radius: 4.75rem;
-/*width: 56.375rem;*/
+    text-align: center;
+    margin: auto;
+    border-radius: 4.75rem;
+    /*width: 56.375rem;*/
 }
 
 .disclaimer__article {
-background: rgba(207, 178, 255, 0.2);
-width: 55%;
-text-transform: uppercase;
+    background: rgba(207, 178, 255, 0.2);
+    width: 55%;
+    text-transform: uppercase;
 }
 
 .text {
-padding: 2rem;
-font-size:1.25rem;
-letter-spacing: 0.025em;
-font-weight: 400;
+    padding: 2rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.025em;
+    font-weight: 400;
 }
 
 .disclaimer__image {
-display:flex;
-margin-top: 5rem;
-width:36.5rem;
-margin-bottom: 5rem;
+    display: flex;
+    margin-top: 5rem;
+    width: 36.5rem;
+    margin-bottom: 5rem;
 }
 
 @media screen and (max-width:1023px) {
-.disclaimer__article {
-width: 80%;
+    .disclaimer__article {
+        width: 80%;
+    }
+
 }
-    
-}
+
 /*------------------------------anxiety-about---------------------------------*/
 .anxiety-about {
-margin-top: 5rem;
-margin-bottom: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 }
 
 .anxiety-about__sections {
-display:grid;
-grid-template-columns: 2fr 1fr;
-margin: 5rem 5rem 5rem 5rem;
-row-gap: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 5rem 5rem 5rem 5rem;
+    row-gap: 4rem;
 }
 
 .text-article {
-letter-spacing: 0.13em;
-font-variant: small-caps;
-line-height: 161.14%;
+    letter-spacing: 0.13em;
+    font-variant: small-caps;
+    line-height: 161.14%;
 }
 
 .anxiety-about__text {
-background: rgba(196, 166, 232, 0.19);
+    background: rgba(196, 166, 232, 0.19);
 }
 
 .anxiety-about__text2 {
-background: rgba(250, 166, 220, 0.25);
+    background: rgba(250, 166, 220, 0.25);
 }
 
 .anxiety-about__title {
-text-align: center;
-background-image: url(anxiety-about-decoration.svg)
-
+    text-align: center;
+    background-image: url(anxiety-about-decoration.svg)
 }
 
 .anxiety-about__picture {
-grid-area: 1/2/4/3;
-margin-top: 7rem;
+    grid-area: 1/2/4/3;
+    margin-top: 7rem;
 }
 
 #anxiety-about__picture {
-width:35rem;
+    width: 35rem;
 }
 
 @media screen and (max-width:1023px) {
-.anxiety-about__picture {
-display: none;
+    .anxiety-about__picture {
+        display: none;
+    }
+
+    .anxiety-about__sections {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
-.anxiety-about__sections {
-display: flex;
-flex-direction: column;
-}
-
-}
 /*------------------------------anxiety-recognition---------------------------*/
 
 .anxiety-recognition {
@@ -291,6 +294,7 @@ flex-direction: column;
 
 .item9 {
     justify-items: center;
+    margin-bottom: 25rem;
 }
 
 .anxiety-recognition__symptoms_item {
@@ -316,6 +320,75 @@ flex-direction: column;
 
 /*------------------------------self-help-------------------------------------*/
 
+.self-help__technique {}
+
+.self-help__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    background: url(/assets/images/decoration/self-help-decoration.svg) no-repeat;
+    background-position: center;
+    margin-bottom: 6rem;
+}
+
+.self-help__exercise_title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.self-help__exercise_text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.self-help__exercise_video {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.self-help__exercise {
+    background-color: #F6D8FF;
+    border-radius: 4rem;
+    margin: 8rem;
+}
+
+.self-help__technique {
+    background-color: #F6D8FF;
+    border-radius: 4rem;
+    margin: 8rem;
+
+}
+
+.self-help__technique_title {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.self-help__technique_title2 {
+    padding: 4rem;
+    text-align: center;
+}
+
+.self-help__technique_text {
+    font-weight: 400;
+    line-height: 161.14%;
+    letter-spacing: 0.13em;
+    padding: 0px 15rem 10rem 15rem;
+    text-align: justify;
+
+}
+
 /*------------------------------prof-help-------------------------------------*/
 .prof-help {
     display: grid;
@@ -340,17 +413,17 @@ flex-direction: column;
     letter-spacing: 0.08em;
 }
 
- .prof-help__info a {
+.prof-help__info a {
     align-self: start;
     color: #575753;
-} 
+}
 
 .prof-help__info a:hover {
     text-decoration: none;
     color: #8D8D85;
-} 
+}
 
-.prof-help__info-text  {
+.prof-help__info-text {
     display: grid;
     grid-template-rows: 2fr repeat(5, 1fr);
     align-items: start;
@@ -414,12 +487,13 @@ flex-direction: column;
 .relief img {
     width: 30vh;
 }
+
 /*------------------------------team------------------------------------------*/
 .team {
     display: grid;
     justify-items: center;
     margin-bottom: 15rem;
-    
+
 }
 
 
@@ -435,7 +509,7 @@ flex-direction: column;
 .title_decor {
     background-image: url(/assets/images/decoration/useful-decoration.svg);
     background-repeat: no-repeat;
-    background-position:left;    
+    background-position: left;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -465,30 +539,30 @@ flex-direction: column;
     color: rgba(112, 112, 106, 0.41);
 }
 
-.useful__text {    
+.useful__text {
     margin: 0;
 }
 
 
 /*-----------------------------------------------useful (media)-----------------------------------------------------------*/
 
-@media screen and (min-width: 768px) and (max-width: 1600px)  {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
 
     .title_decor {
         width: 35rem;
         height: 10rem;
     }
-    
+
     .useful__items {
         display: flex;
         justify-content: space-around;
         padding: 7rem 8rem 12rem;
     }
-    
+
     .useful__item {
-        width: 32%;    
+        width: 32%;
     }
-    
+
     .useful__block {
         width: 100%;
     }
@@ -502,13 +576,13 @@ flex-direction: column;
 
 
 @media screen and (max-width: 767px) {
-    
+
     .title_decor {
         background-size: 7rem;
         width: 25rem;
         height: 10rem;
     }
-    
+
     .useful__items {
         display: flex;
         flex-direction: column;
@@ -516,13 +590,13 @@ flex-direction: column;
         justify-content: center;
         padding: 0 4rem 0;
     }
-    
+
     .useful__item {
         margin-bottom: 7rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }   
+    }
 
     .useful__block {
         width: 17rem;
@@ -535,7 +609,7 @@ flex-direction: column;
     }
 }
 
- .team__title {
+.team__title {
     align-self: end;
     padding: 8rem;
     margin-bottom: 5rem;
@@ -544,39 +618,40 @@ flex-direction: column;
     background-position: 12% 25%;
     background-size: 25vh;
     letter-spacing: 0.08em;
- }
+}
 
- .team__images-box {
+.team__images-box {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-bottom: 10rem;
     letter-spacing: 0.08em;
- }
+}
 
 .team__images img {
     width: 35vh;
 }
 
 .team__description {
-   display: flex;
-   align-items: center;
-   box-sizing: border-box;
-   margin-bottom: 5rem;
-   width: 80vw;
-   height: 28vh;
-   font-weight: 400;
-   border-radius: 50px;
-   text-align: center;
-   background-color: #F6D8FFA6;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+    width: 80vw;
+    height: 28vh;
+    font-weight: 400;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #F6D8FFA6;
 }
 
 .team__description p {
-   font-size: 1.2rem;
-   margin: 10%;
-   text-transform: uppercase;
-   letter-spacing: 0.08em;
+    font-size: 1.2rem;
+    margin: 10%;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
+
 /*------------------------------useful----------------------------------------*/
 
 
@@ -585,8 +660,8 @@ flex-direction: column;
 /*------------------------------Footer----------------------------------------*/
 
 .footer {
-    display: flex;    
-    align-items: center;   
+    display: flex;
+    align-items: center;
     background: #D6B2E3;
 }
 
@@ -612,43 +687,43 @@ flex-direction: column;
         flex-direction: column;
         margin-right: 13rem;
     }
-    
+
     .footer__headline {
         font-weight: 700;
         margin-bottom: 1.5rem;
     }
-    
+
     .footer__link {
         color: #636B5B;
     }
-    
+
     .footer__text {
         margin: 0;
         font-size: 1.25rem;
     }
-    
+
     .footer__link:hover {
         text-decoration: underline;
-        color: #636B5B;;
+        color: #636B5B;
+        ;
     }
 }
 
 @media screen and (max-width: 767px) {
 
-    .footer { 
+    .footer {
         justify-content: center;
         align-items: center;
         height: 8rem;
     }
-    
+
     .footer__copyright {
         font-weight: 700;
     }
-    
+
     .footer__inspire {
         display: none;
         width: 0rem;
     }
 
 }
-
