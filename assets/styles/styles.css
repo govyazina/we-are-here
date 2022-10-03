@@ -138,7 +138,7 @@
 }
 
 .cover__text_with-bg {
-    background-image: url("../../assets/images/decoration/cover-decoration.svg");
+    background-image: url("../images/decoration/cover-decoration.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
