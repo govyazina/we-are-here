@@ -94,11 +94,11 @@
 
 @media screen and (max-width: 991px) {
     .collapse {
-        margin-left: calc(60px - 0.5rem);
+        margin-left: 3rem;
     }
 
     .header__link_pink {
-        margin-left: calc(60px - 2rem + 0.5rem + 1rem);
+        margin-left: 3rem;
     }
 
     .header__link_nav {
