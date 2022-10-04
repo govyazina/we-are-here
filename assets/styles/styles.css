@@ -177,7 +177,7 @@
     margin-bottom: 5rem;
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:991px) {
     .disclaimer__article {
         width: 80%;
     }
@@ -213,7 +213,10 @@
 
 .anxiety-about__title {
     text-align: center;
-    background-image: url(anxiety-about-decoration.svg)
+    background: url(../../assets/images/decoration/anxiety-about-decoration.svg) no-repeat;
+    background-position: 35%;
+    height: 13rem;
+    padding-top: 3rem;
 }
 
 .anxiety-about__picture {
@@ -225,7 +228,7 @@
     width: 35rem;
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:991px) {
     .anxiety-about__picture {
         display: none;
     }
