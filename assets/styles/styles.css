@@ -913,195 +913,14 @@
     padding: 8rem;
     margin-bottom: 5rem;
     font-weight: bold;
-    background: url(/Support/assets/images/decoration/team-decoration.svg) no-repeat;
+    background: url("../images/decoration/team-decoration.svg") no-repeat;
+    background-size: 40%;
     letter-spacing: 0.08em;
+    background-position: 12% 25%;
 }
 
-/*------------------------------team-media------------------------------------*/
-@media screen and (max-width: 480px) {
-    .team__images-box {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 10rem;
-        letter-spacing: 0.08em;
-
-    }
-
-    .team__images img {
-        width: 20vh;
-    }
-
-    .team__title {
-        background-position: 12% 25%;
-        background-size: 14vh;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 991px) {
-    .team__images img {
-        width: 15vh;
-    }
-
-    .team__images-box {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 10rem;
-        letter-spacing: 0.08em;
-    }
-
-    .team__title {
-        background-size: 20vh;
-        background-position: 12% 25%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    .team__images img {
-        width: 30vh;
-    }
-}
-
-/*-----------------------------------------------useful-------------------------------------------------------------*/
-
-.useful {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10rem;
-}
-
-.useful__title {
-    background-image: url("../images/decoration/useful-decoration.svg");
-    background-repeat: no-repeat;
-    background-position: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
-    width: 38rem;
-    height: 13rem;
-    font-weight: 700;
-}
-
-.useful__items {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-}
-
-.useful__item {
-    width: 30%;
-}
-
-.useful__img {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 3rem;
-}
-
-.useful__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0.8rem 0;
-    height: 8rem;
-    width: 100%;
-    text-align: center;
-    background: rgba(246, 216, 255, 0.65);
-    border-radius: 3rem;
-    border: none;
-    color: #575753;
-    font-weight: 500;
-}
-
-.useful__button:hover {
-    color: #8D8D85;
-    background-color: #b696c150;
-    text-decoration: none;
-}
-
-.useful__button:active {
-    border: none;
-    color: rgba(112, 112, 106, 0.41);
-    background: #ce9ce1;
-    /*здесь при нажатии поменяла цвет, нужно согласовать с дизайнером*/
-}
-
-.useful__button:visited {
-    background: rgba(246, 216, 255, 0.65);
-    color: #575753;
-}
-
-
-/*-----------------------------------------------useful (media)-----------------------------------------------------------*/
-
-@media screen and (min-width: 481px) and (max-width: 991px) {
-
-    .useful {
-        margin-bottom: 4rem;
-    }
-
-    .useful__title {
-        width: 35rem;
-        height: 10rem;
-        margin-bottom: 1rem;
-    }
-
-    .useful__items {
-        width: 100%;
-        padding: 2rem 2rem 2rem;
-    }
-
-    .useful__item {
-        width: 32%;
-    }
-
-    .useful__button {
-        width: 100%;
-        font-size: 1.3rem;
-    }
-
-}
-
-
-@media screen and (max-width: 480px) {
-
-    .useful__title {
-        background-size: 15rem;
-    }
-
-    .useful__items {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0 4rem 0;
-    }
-
-    .useful__item {
-        width: 100%;
-        margin-bottom: 7rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .useful__button {
-        width: 30rem;
-        height: 10vh;
-        border-radius: 4rem;
-    }
-
-    .useful__img {
-        width: 90%;
-        max-width: 90%;
-        margin-bottom: 3rem;
-    }
+.team__images img {
+    width: 30vh;
 }
 
 .team__images-box {
@@ -1131,11 +950,155 @@
     border-radius: 10px;
     align-self: center;
 }
+/*------------------------------team-media------------------------------------*/
+@media screen and (max-width: 480px) {
+    .team__images-box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10rem;
+        letter-spacing: 0.08em;
+
+    }
+
+    .team__images img {
+        width: 20vh;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .team__images img {
+        width: 15vh;
+    }
+
+    .team__images-box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10rem;
+        letter-spacing: 0.08em;
+        width: 70vw;
+    }
+
+}
+
 
 /*------------------------------useful----------------------------------------*/
 
 
-
+.useful {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.useful__title {
+    background-image: url("../images/decoration/useful-decoration.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    width: 38rem;
+    height: 13rem;
+    font-weight: 700;
+}
+.useful__items {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.useful__item {
+    width: 30%;
+}
+.useful__img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+.useful__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.8rem 0;
+    height: 8rem;
+    width: 100%;
+    text-align: center;
+    background: rgba(246, 216, 255, 0.65);
+    border-radius: 3rem;
+    border: none;
+    color: #575753;
+    font-weight: 500;
+}
+.useful__button:hover {
+    color: #8D8D85;
+    background-color: #b696c150;
+    text-decoration: none;
+}
+.useful__button:active {
+    border: none;
+    color: rgba(112, 112, 106, 0.41);
+    background: #CE9CE1; /*здесь при нажатии поменяла цвет, нужно согласовать с дизайнером*/
+}
+.useful__button:visited {
+    background: rgba(246, 216, 255, 0.65);
+    color: #575753;
+}
+/*-----------------------------------------------useful (media)-----------------------------------------------------------*/
+@media screen and (min-width: 481px) and (max-width: 991px) {
+    .useful {
+        margin-bottom: 4rem;
+    }
+    .useful__title {
+        width: 35rem;
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+    .useful__items {
+        width: 100%;
+        padding: 2rem 2rem 2rem;
+    }
+    .useful__item {
+        width: 32%;
+    }
+    .useful__button {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .useful__title {
+        background-size: 15rem;
+    }
+    .useful__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4rem 0;
+    }
+    .useful__item {
+        width: 100%;
+        margin-bottom: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .useful__button {
+        width: 30rem;
+        height: 10vh;
+        border-radius: 4rem;
+    }
+    .useful__img {
+        width: 90%;
+        max-width: 90%;
+        margin-bottom: 3rem;
+    }
+}
 
 /*------------------------------Footer----------------------------------------*/
 
@@ -1149,56 +1112,45 @@
     background: #D6B2E3;
     color: rgba(99, 107, 91, 0.8);
 }
-
 .footer__copyright {
     margin-bottom: 0;
     font-size: 1.2rem;
 }
-
 .footer__inspire {
     display: flex;
     flex-direction: column;
 }
-
 .footer__headline {
     margin-bottom: 2rem;
     font-size: 1.2rem;
 }
-
 .footer__link {
     color: rgba(99, 107, 91, 0.6);
 }
-
 .footer__link:hover {
     text-decoration: underline;
     color: #636B5B;
 }
-
 .footer__text {
     margin: 0;
     font-size: 1rem;
 }
-
 .footer__text-space {
     margin-bottom: 0.7rem;
 }
-
 @media screen and (min-width: 481px) and (max-width: 991px) {
     .footer {
         height: 10rem;
         padding: 1rem 2rem 1rem;
     }
 }
-
 @media screen and (max-width: 767px) {
-
     .footer {
         justify-content: center;
         align-items: center;
         height: 10rem;
         font-size: 1.5rem;
     }
-
     .footer__inspire {
         display: none;
         width: 0rem;
