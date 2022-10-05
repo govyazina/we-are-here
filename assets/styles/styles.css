@@ -385,8 +385,8 @@
 
     .anxiety-recognition__symptoms img {
         margin-right: 2rem;
-        height: 100%;
-        width: 100%;
+        height: 5rem;
+        width: 5rem;
     }
 }
 
@@ -421,10 +421,10 @@
     .anxiety-recognition__symptoms img {
         margin-right: 1.5rem;
         margin-left: 0.5rem;
-        height: 100%;
-        width: 100%;
-
+        height: 5rem;
+        width: 5rem;
     }
+
 
 }
 
@@ -569,6 +569,18 @@
         padding: 0px 6rem 5rem 6rem;
     }
 
+}
+
+@media screen and (min-width: 992px) {
+    .video {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    .self-help__exercise_text {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 }
 
 /*------------------------------prof-help-------------------------------------*/
