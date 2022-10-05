@@ -461,9 +461,9 @@
     justify-items: center;
     justify-content: center;
     row-gap: 5rem;
-}
-
-.prof-help__title {
+    }
+    
+    .prof-help__title {
     background: url("../images/decoration/prof-help-decoration.svg") no-repeat;
     background-position: center;
     text-align: center;
@@ -476,22 +476,22 @@
     margin: 2rem;
     height: 20vh;
     width: 40vw;
-}
-
-.prof-help__info a {
+    }
+    
+    .prof-help__info a {
     align-self: start;
     padding-left: 10px;
     color: #575753;
-}
-
-.prof-help__info a:hover {
+    }
+    
+    .prof-help__info a:hover {
     text-decoration: none;
     color: #575753;
     background-color: #b696c150;
     border-radius: 10px;
-}
-
-.prof-help__info-text {
+    }
+    
+    .prof-help__info-text {
     border-radius: 25px;
     letter-spacing: 0.08em;
     font-weight: 400;
@@ -508,50 +508,49 @@
     line-height: 32px;
     font-size: 1rem;
     gap: 0.5rem;
-}
-
-.prof-help__info-resurces img,
-.prof-help__info-phone img,
-.prof-help__info-pills img,
-.prof-help__info-psychotherapy img {
+    }
+    
+    .prof-help__info-resurces img,
+    .prof-help__info-phone img,
+    .prof-help__info-pills img,
+    .prof-help__info-psychotherapy img {
     height: 40vh;
     box-sizing: border-box;
     width: 85%;
     margin-bottom: 5rem;
     justify-self: center ;
-}
-.prof-help__info-pills,
-.prof-help__info-resurces,
-.prof-help__info-psychotherapy,
-.prof-help__info-phone {
-        display: grid;
-        gap: 2rem;
-        align-self: center;
     }
-
-.prof-help__info-text h2 {
+    .prof-help__info-pills,
+    .prof-help__info-resurces,
+    .prof-help__info-psychotherapy,
+    .prof-help__info-phone {
+    display: grid;
+    gap: 2rem;
+    align-self: center;
+    }
+    
+    .prof-help__info-text h2 {
     font-weight: bold;
     font-size: 1.3rem;
-}
-
-.prof-help__info-text_bold {
+    }
+    
+    .prof-help__info-text_bold {
     font-weight: bold;
-}
-
-.prof-help__info-resurces h2 {
+    }
+    
+    .prof-help__info-resurces h2 {
     padding-left: 10px;
-}
-
-.prof-help__info-pills img {
+    }
+    
+    .prof-help__info-pills img {
     height: 40vh;
     width: 85%;
-}
-
-.prof-help__info-resurces img,
-.prof-help__info-pills img {
+    }
+    
+    .prof-help__info-resurces img,
+    .prof-help__info-pills img {
     padding: 5%;
-}
-
+    }
 /*------------------------------prof-help-media------------------------*/
 @media screen and (max-width: 480px) {
     .prof-help {
