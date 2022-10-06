@@ -331,8 +331,8 @@
     font-weight: 400;
     border-radius: 2.8rem;
     background-color: rgba(196, 166, 232, 0.19);
-    text-align: center;
-    justify-content: center;
+    text-align:start;
+    justify-content: flex-start;
     padding: 4rem 2rem;
 }
 
@@ -380,7 +380,6 @@
         padding: 0.5rem;
         margin: 0;
         height: 6vh;
-        justify-content: flex-start;
     }
 
     .item9 {
@@ -415,7 +414,6 @@
         padding: 0.5rem;
         margin: 0;
         height: 15vh;
-        justify-content: flex-start;
     }
 
     .item9 {
