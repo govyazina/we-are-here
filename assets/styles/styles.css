@@ -1068,8 +1068,9 @@
         width: 32%;
     }
     .useful__button {
-        width: 100%;
-        font-size: 1.3rem;
+        width: 15rem;
+        height: 8rem;
+        font-size: 1rem;
     }
 }
 @media screen and (max-width: 480px) {
@@ -1092,7 +1093,7 @@
     }
     .useful__button {
         width: 30rem;
-        height: 10vh;
+        height: 12rem;
         border-radius: 4rem;
     }
     .useful__img {
