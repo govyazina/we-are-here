@@ -1,0 +1,1100 @@
+/*---общие правила
+1. называем заголовки title, title будет всегда отдельным блоком, не будет элементом, их размер 2,1 rem
+2. отступы в rem*/
+
+
+
+
+/*--------------------------------------Global-----------------------------*/
+
+.wrap {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    /*где-то по тексту бывает 2.4rem, надо отслеживать*/
+    color: #575753;
+    background: rgba(255, 243, 253, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    font-variant: small-caps;
+
+
+}
+
+.title {
+    color: #636B5B;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 3.4rem;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 8px;
+    }
+
+}
+
+/*-----------------------------Header----------------------------------------*/
+.header {
+    background-color: #D6B2E3;
+    color: #554F4F;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.header__logo-img {
+    margin-right: 1rem;
+    width: 3.75rem;
+}
+
+.header__link,
+.header__link:hover {
+    color: #554F4F;
+    text-decoration: none;
+}
+
+.header__link_nav {
+    padding: 0 0.5rem 0 0.5rem;
+    margin-right: 1rem;
+    transition: 0.3s ease-out 0.1s;
+}
+
+.header__link_nav:hover {
+    background-color: #B696C194;
+    border-radius: 20px;
+    transition: 0.3s ease-out 0.1s;
+}
+
+.header__link_nav:active {
+    background-color: #EED4F0;
+    border-radius: 20px;
+    transition: 0.3s ease-out 0.1s;
+}
+
+.header__link_pink {
+    display: block;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: #EEC7E8;
+    border-radius: 20px;
+    transition: 0.3s ease-out 0.1s;
+}
+
+.header__link_pink:hover {
+    background-color: #FBE5F7A8;
+    transition: 0.3s ease-out 0.1s;
+}
+
+.header__link_pink:active {
+    background-color: #FFFFFFB8;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 991px) {
+    .collapse {
+        margin-left: 3rem;
+    }
+
+    .header__link_pink {
+        margin-left: 3rem;
+    }
+
+    .header__link_nav {
+        padding-left: calc(1rem + 1rem);
+        /*width: 10.5rem;*/
+    }
+
+
+}
+
+/*------------------------------Main-----------------------------------------*/
+
+/*------------------------------cover-----------------------------------------*/
+.cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    padding: 10rem 25% 10rem 25%;
+
+    letter-spacing: 0.1em;
+
+}
+
+.title_big {
+    font-size: 2.3rem;
+    width: 70vw;
+}
+
+.cover__img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.cover__text {
+    line-height: 161.14%;
+    font-weight: 400;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 100%;
+    letter-spacing: 0.025em;
+}
+
+.cover__text_with-bg {
+    background-image: url("../images/decoration/cover-decoration.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 480px) {
+    .cover {
+        padding: 4rem 5% 4rem 5%;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+    .cover {
+        padding: 8rem 10% 8rem 10%;
+    }
+
+}
+
+/*------------------------------disclaimer------------------------------------*/
+.disclaimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article {
+    text-align: center;
+    margin: auto;
+    border-radius: 4.75rem;
+    /*width: 56.375rem;*/
+}
+
+.disclaimer__article {
+    background: rgba(207, 178, 255, 0.2);
+    width: 55%;
+    text-transform: uppercase;
+}
+
+.text {
+    padding: 2rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.025em;
+    font-weight: 400;
+}
+
+.disclaimer__image {
+    display: flex;
+    margin-top: 5rem;
+    width: 36.5rem;
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width:991px) {
+    .disclaimer__article {
+        width: 80%;
+    }
+
+}
+
+/*------------------------------anxiety-about---------------------------------*/
+.anxiety-about {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.anxiety-about__sections {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 5rem 5rem 5rem 5rem;
+    row-gap: 4rem;
+}
+
+.text-article {
+    letter-spacing: 0.13em;
+    font-variant: small-caps;
+    line-height: 161.14%;
+}
+
+.anxiety-about__text {
+    background: rgba(196, 166, 232, 0.19);
+}
+
+.anxiety-about__text2 {
+    background: rgba(250, 166, 220, 0.25);
+}
+
+.anxiety-about__title {
+    text-align: center;
+    background: url("../../assets/images/decoration/anxiety-about-decoration.svg") no-repeat;
+    height: 13rem;
+    padding-top: 3rem;
+    background-position: 25% 50%;
+}
+
+.anxiety-about__picture {
+    grid-area: 1/2/4/3;
+    margin-top: 7rem;
+}
+
+#anxiety-about__picture {
+    width: 35rem;
+}
+
+@media screen and (max-width:991px) {
+    .anxiety-about__picture {
+        display: none;
+    }
+
+    .anxiety-about__sections {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .anxiety-about__title {
+        background-size: 15rem;
+        background-position: 10% 10%;
+    }
+}
+
+/*------------------------------anxiety-recognition---------------------------*/
+
+.anxiety-recognition {
+    margin-bottom: 10rem;
+}
+
+.anxiety-recognition__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anxiety-recognition__title_text {
+    background-image: url("../../assets/images/decoration/anxiety-about-decoration.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+    height: 13rem;
+    width: 50rem;
+}
+
+.anxiety-recognition__block {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(196, 166, 232, 0.19);
+    border-radius: 2.5rem;
+    margin-bottom: 14rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.anxiety-recognition__block_text {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 2.9rem 1.6rem;
+    line-height: 2.4rem;
+}
+
+.anxiety-recognition__symptoms {
+    display: grid;
+    grid-gap: 1.4rem;
+    margin: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "item1 item2"
+        "item3 item4"
+        "item5 item6"
+        "item7 item8"
+        ".     item9";
+
+}
+
+.anxiety-recognition__symptoms_item {
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    font-weight: 400;
+    border-radius: 2.8rem;
+    background-color: rgba(196, 166, 232, 0.19);
+    text-align:start;
+    justify-content: flex-start;
+    padding: 4rem 2rem;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8 {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.item9 {
+    grid-area: 5/1/6/3;
+    justify-self: center;
+    width: 30rem;
+}
+
+.anxiety-recognition__symptoms img {
+    max-width: 8rem;
+    max-height: 8rem;
+    margin-right: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+    .anxiety-recognition__title_text {
+        margin-bottom: 3rem;
+        background-size: contain;
+    }
+
+    .anxiety-recognition__block {
+        margin-bottom: 4rem;
+    }
+
+    .anxiety-recognition__symptoms {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .anxiety-recognition__symptoms_item {
+        padding: 0.5rem;
+        margin: 0;
+        height: 6vh;
+    }
+
+    .item9 {
+        width: 100%;
+    }
+
+    .anxiety-recognition__symptoms img {
+        margin-right: 2rem;
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+    .anxiety-recognition__title {
+        margin-bottom: 2rem;
+        background-size: contain;
+    }
+
+    .anxiety-recognition__block {
+        margin-bottom: 10rem;
+    }
+
+    .anxiety-recognition__symptoms {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .anxiety-recognition__symptoms_item {
+        padding: 0.5rem;
+        margin: 0;
+        height: 15vh;
+    }
+
+    .item9 {
+        width: 100%;
+    }
+
+    .anxiety-recognition__symptoms img {
+        margin-right: 1.5rem;
+        margin-left: 0.5rem;
+        height: 5rem;
+        width: 5rem;
+    }
+
+
+}
+
+/*------------------------------self-help-------------------------------------*/
+
+.self-help__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    background: url("../../assets/images/decoration/self-help-decoration.svg") no-repeat;
+    background-position: center;
+    margin-bottom: 6rem;
+}
+
+.self-help__exercise_title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 3rem 2rem 5rem 2rem;
+}
+
+.self-help__exercise_text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.self-help__exercise_video {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10rem;
+    width: 100%;
+}
+
+.self-help__exercise {
+    background-color: #F6D8FF;
+    border-radius: 4rem;
+    margin: 8rem;
+}
+
+.self-help__technique {
+    background-color: #F6D8FF;
+    border-radius: 4rem;
+    margin: 8rem;
+
+}
+
+.self-help__technique_title {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.self-help__technique_title2 {
+    padding: 4rem;
+    text-align: center;
+}
+
+.self-help__technique_text {
+    font-weight: 400;
+    line-height: 161.14%;
+    letter-spacing: 0.13em;
+    padding: 0px 15rem 10rem 15rem;
+    text-align: justify;
+
+}
+
+@media screen and (max-width: 480px) {
+    .self-help__title {
+        background-size: contain;
+    }
+
+    .self-help__exercise {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .video {
+        width: 90%;
+        height: 30vh;
+        padding-bottom: 5rem;
+    }
+
+    .self-help__exercise_video {
+        padding-bottom: 1rem;
+    }
+
+    .self-help__technique {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        width: 90%;
+    }
+
+    .self-help__technique_text {
+        padding: 0px 6rem 5rem 6rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+
+    .self-help__exercise {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .video {
+        width: 90%;
+        height: 20vh;
+        height: 300px;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .self-help__exercise_video {
+        padding-bottom: 4rem;
+    }
+
+    .self-help__exercise_text {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .self-help__technique {
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+
+    .self-help__technique_text {
+        padding: 0px 6rem 5rem 6rem;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .video {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    .self-help__exercise_text {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+/*------------------------------prof-help-------------------------------------*/
+.prof-help {
+    margin-bottom: 5rem;
+    font-size: 1.25rem;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+    }
+    
+    .prof-help__title {
+    background: url("../images/decoration/prof-help-decoration.svg") no-repeat;
+    background-position: center;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 1rem;
+    margin: 2rem;
+    height: 12rem; /*было 20vh, сделала как ублока self-help*/
+    width: 40vw;
+    }
+    
+    .prof-help__info a {
+    align-self: start;
+    padding-left: 10px;
+    color: #575753;
+    }
+    
+    .prof-help__info a:hover {
+    text-decoration: none;
+    color: #575753;
+    background-color: #b696c150;
+    border-radius: 10px;
+    }
+    
+    .prof-help__info-text {
+    border-radius: 25px;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: #F6D8FF;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    align-items: start;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 60vh;
+    padding: 10%;
+    line-height: 32px;
+    font-size: 1rem;
+    gap: 0.5rem;
+    }
+    
+    .prof-help__info-resurces img,
+    .prof-help__info-phone img,
+    .prof-help__info-pills img,
+    .prof-help__info-psychotherapy img {
+    height: 40vh;
+    box-sizing: border-box;
+    width: 85%;
+    margin-bottom: 5rem;
+    justify-self: center ;
+    }
+
+    .prof-help__info-pills,
+    .prof-help__info-resurces,
+    .prof-help__info-psychotherapy,
+    .prof-help__info-phone {
+    display: grid;
+    gap: 2rem;
+    align-self: center;
+    }
+    
+    .prof-help__info-text h2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    }
+    
+    .prof-help__info-text_bold {
+    font-weight: bold;
+    }
+    
+    .prof-help__info-resurces h2 {
+    padding-left: 10px;
+    }
+    
+    .prof-help__info-pills img {
+    height: 40vh;
+    width: 85%;
+    }
+    
+    .prof-help__info-resurces img,
+    .prof-help__info-pills img {
+    padding: 5%;
+    }
+/*------------------------------prof-help-media------------------------*/
+@media screen and (max-width: 480px) {
+    .prof-help {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .prof-help__info-text {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 90%;
+        height: 30vh;
+        padding: 5%;
+        box-sizing: border-box;
+        line-height: 30px;
+
+    }
+
+    .prof-help__title {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        padding: 1rem;
+        height: 20vh;
+        width: 60vw;
+        text-align: center;
+        background-size: 45%;
+    }
+
+    .prof-help__info-text p {
+        box-sizing: border-box;
+    }
+
+
+
+    .prof-help__info-phone img,
+    .prof-help__info-pills img,
+    .prof-help__info-psychotherapy img {
+        height: 70%;
+        width: 70%;
+        margin-bottom: 5rem;
+    }
+
+    
+    .prof-help__info-pills img {
+        width: 70%;
+        height: 70%;
+        margin-bottom: 5rem;
+        box-sizing: border-box;
+    }
+
+    .prof-help__info-resurces img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .prof-help__info-pills,
+    .prof-help__info-resurces,
+    .prof-help__info-psychotherapy,
+    .prof-help__info-phone {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        font-size: 1.4rem;
+        text-align: left;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+
+    .prof-help {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .prof-help__info-text a {
+        display: block;
+    }
+
+    .prof-help__info-text {
+        margin-bottom: 5rem;
+        width: 45vw;
+        height: 35vh;
+        box-sizing: border-box;
+        line-height: 30px;
+        padding: 5%;
+        font-size: 1rem;
+    }
+
+    .prof-help__title {
+        display: flex;
+        width: 60vw;
+        height: 15vh;
+        background-size: 13vh;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .prof-help__info-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .prof-help__info-phone img,
+    .prof-help__info-pills img,
+    .prof-help__info-psychotherapy img {
+        height: 25vh;
+        width: 44vw;
+        margin-bottom: 5rem;
+    }
+
+    .prof-help__info-resurces img {
+        width: 45vw;
+        height: 25vh;
+        margin-bottom: 5rem;
+        padding: 5% 0 0 5%;
+        box-sizing: border-box;
+    }
+
+    .prof-help__info-pills img {
+        width: 37vw;
+        margin-left: 5%;
+    }
+
+}
+
+
+
+/*------------------------------relief---------------------------------*/
+.relief {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.relief img {
+    width: 25vh;
+}
+
+@media screen and (max-width: 480px) {
+    .relief img {
+        width: 18vh;
+    }
+}
+
+/*------------------------------team------------------------------------------*/
+.team {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 10rem;
+    text-transform: uppercase;
+}
+
+.team__title {
+    align-self: end;
+    padding: 8rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    background: url("../images/decoration/team-decoration.svg") no-repeat;
+    background-size: 40%;
+    letter-spacing: 0.08em;
+    background-position: 12% 25%;
+}
+
+.team__images img {
+    width: 30vh;
+}
+
+.team__images-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10rem;
+    letter-spacing: 0.08em;
+}
+
+.team__description {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #F6D8FF;
+    width: 90vw;
+    border-radius: 25px;
+}
+
+.team__description p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 5%;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-radius: 10px;
+    align-self: center;
+}
+/*------------------------------team-media------------------------------------*/
+@media screen and (max-width: 480px) {
+    .team__images-box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10rem;
+        letter-spacing: 0.08em;
+
+    }
+
+    .team__images img {
+        width: 20vh;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .team__images img {
+        width: 15vh;
+    }
+
+    .team__images-box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10rem;
+        letter-spacing: 0.08em;
+        width: 70vw;
+    }
+
+}
+
+
+/*------------------------------useful----------------------------------------*/
+
+
+.useful {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.useful__title {
+    background-image: url("../images/decoration/useful-decoration.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    width: 38rem;
+    height: 13rem;
+    font-weight: 700;
+}
+.useful__items {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.useful__item {
+    width: 30%;
+}
+.useful__img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+.useful__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.8rem 0;
+    height: 8rem;
+    width: 100%;
+    text-align: center;
+    background: rgba(246, 216, 255, 0.65);
+    border-radius: 3rem;
+    border: none;
+    color: #575753;
+    font-weight: 500;
+}
+.useful__button:hover {
+    color: #8D8D85;
+    background-color: #b696c150;
+    text-decoration: none;
+}
+.useful__button:active {
+    border: none;
+    color: rgba(112, 112, 106, 0.41);
+    background: #CE9CE1; /*здесь при нажатии поменяла цвет, нужно согласовать с дизайнером*/
+}
+.useful__button:visited {
+    background: rgba(246, 216, 255, 0.65);
+    color: #575753;
+}
+/*-----------------------------------------------useful (media)-----------------------------------------------------------*/
+@media screen and (min-width: 481px) and (max-width: 991px) {
+    .useful {
+        margin-bottom: 4rem;
+    }
+    .useful__title {
+        width: 35rem;
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+    .useful__items {
+        width: 100%;
+        padding: 2rem 2rem 2rem;
+    }
+    .useful__item {
+        width: 32%;
+    }
+    .useful__button {
+        width: 15rem;
+        height: 8rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .useful__title {
+        background-size: 15rem;
+    }
+    .useful__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4rem 0;
+    }
+    .useful__item {
+        width: 100%;
+        margin-bottom: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .useful__button {
+        width: 30rem;
+        height: 12rem;
+        border-radius: 4rem;
+    }
+    .useful__img {
+        width: 90%;
+        max-width: 90%;
+        margin-bottom: 3rem;
+    }
+}
+
+/*------------------------------Footer----------------------------------------*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 11rem;
+    padding: 1rem 4rem 1rem;
+    font-weight: 500;
+    background: #D6B2E3;
+    color: rgba(99, 107, 91, 0.8);
+}
+.footer__copyright {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+.footer__inspire {
+    display: flex;
+    flex-direction: column;
+}
+.footer__headline {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+.footer__link {
+    color: rgba(99, 107, 91, 0.6);
+}
+.footer__link:hover {
+    text-decoration: underline;
+    color: #636B5B;
+}
+.footer__text {
+    margin: 0;
+    font-size: 1rem;
+}
+.footer__text-space {
+    margin-bottom: 0.7rem;
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+    .footer {
+        height: 10rem;
+        padding: 1rem 2rem 1rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer {
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        font-size: 1.5rem;
+    }
+    .footer__inspire {
+        display: none;
+        width: 0rem;
+    }
+}
